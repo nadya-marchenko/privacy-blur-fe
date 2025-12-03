@@ -21,6 +21,7 @@ A React application for detecting and blurring faces in images using Google Clou
 - **Google Cloud Vision API** - Face detection
 - **Canvas API** - Client-side image processing
 
+
 ## Getting Started
 
 ### Prerequisites
