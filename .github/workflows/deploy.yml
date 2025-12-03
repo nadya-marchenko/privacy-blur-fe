@@ -17,6 +17,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Make sure to create this secret in your GitHub repo:
+      # Settings -> Secrets and variables -> Actions -> New repository secret
+      # Name: VITE_GOOGLE_CLOUD_API_KEY, Value: your actual API key
+      VITE_GOOGLE_CLOUD_API_KEY: ${{ secrets.VITE_GOOGLE_CLOUD_API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
